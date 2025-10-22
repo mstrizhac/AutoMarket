@@ -1,0 +1,87 @@
+// Масив з тестовими даними автомобілів
+export const cars = [
+  {
+    id: 1,
+    title: "Toyota Camry 2022",
+    price: "28,500",
+    year: 2022,
+    mileage: "45,000",
+    fuelType: "Бензин",
+    location: "Київ",
+    image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop",
+    condition: "Вживаний",
+    description: "Автомобіль в ідеальному стані, один власник, повна сервісна історія. Регулярне технічне обслуговування у офіційного дилера. Всі ТО пройдені вчасно.",
+    seller: "Автосалон 'Преміум Авто'",
+    phone: "+380 67 123 45 67"
+  },
+  {
+    id: 2,
+    title: "BMW X5 2021",
+    price: "52,900",
+    year: 2021,
+    mileage: "32,000",
+    fuelType: "Дизель",
+    location: "Львів",
+    image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop",
+    condition: "Вживаний",
+    description: "Розкішний SUV преміум класу. Повна комплектація, шкіряний салон, панорамний дах, система навігації. Автомобіль не бився, не фарбувався.",
+    seller: "Приватний продавець",
+    phone: "+380 50 987 65 43"
+  },
+  {
+    id: 3,
+    title: "Porsche 911 Carrera",
+    price: "89,000",
+    year: 2023,
+    mileage: "8,500",
+    fuelType: "Бензин",
+    location: "Одеса",
+    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop",
+    condition: "Вживаний",
+    description: "Легендарний спортивний автомобіль. Двигун 3.0L турбо, 379 к.с. Спортивний пакет, адаптивна підвіска, преміальна аудіосистема Bose.",
+    seller: "Porsche Center",
+    phone: "+380 44 555 77 88"
+  },
+  {
+    id: 4,
+    title: "Volkswagen Golf 8",
+    price: "24,300",
+    year: 2023,
+    mileage: "15,000",
+    fuelType: "Бензин",
+    location: "Харків",
+    image: "https://images.unsplash.com/photo-1697178088431-83c5c59c913f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1015",
+    condition: "Вживаний",
+    description: "Компактний хетчбек нового покоління. Економічний двигун, сучасна мультимедійна система, системи безпеки. Ідеально для міста.",
+    seller: "Volkswagen Харків",
+    phone: "+380 57 123 45 67"
+  },
+  {
+    id: 5,
+    title: "Ford F-150 Raptor",
+    price: "67,500",
+    year: 2022,
+    mileage: "25,000",
+    fuelType: "Бензин",
+    location: "Дніпро",
+    image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&h=600&fit=crop",
+    condition: "Вживаний",
+    description: "Потужний пікап для роботи та відпочинку. Двигун V6 EcoBoost, повний привод, підвіска FOX Racing. Максимальна прохідність.",
+    seller: "Ford Центр",
+    phone: "+380 56 789 01 23"
+  },
+  {
+    id: 6,
+    title: "Tesla Model S",
+    price: "75,900",
+    year: 2023,
+    mileage: "12,000",
+    fuelType: "Електро",
+    location: "Київ",
+    image: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800&h=600&fit=crop",
+    condition: "Новий",
+    description: "Електричний седан преміум класу. Запас ходу до 650 км, автопілот, OTA оновлення. Найсучасніші технології та екологічність.",
+    seller: "Tesla Center Ukraine",
+    phone: "+380 44 electric"
+  }
+];
