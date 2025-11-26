@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './Contact.module.css';
 import Button from "../../components/Button/Button.jsx";
 
-function Contact() {
+export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -169,5 +169,3 @@ function Contact() {
     </div>
   );
 }
-
-export default Contact;

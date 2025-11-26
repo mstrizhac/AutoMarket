@@ -4,7 +4,7 @@ import Button from "../../components/Button/Button.jsx";
 import Select from "../../components/Select/Select.jsx";
 import Images from "../../components/Images/Images.jsx";
 
-function AddListing({changePage}) {
+export default function AddListing({changePage}) {
   const [formData, setFormData] = useState({
     title: '',
     price: '',
@@ -143,5 +143,3 @@ function AddListing({changePage}) {
     </div>
   );
 }
-
-export default AddListing;

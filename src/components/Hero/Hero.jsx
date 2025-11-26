@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import styles from './Hero.module.css';
+import {Link} from "react-router-dom";
 
-function Hero() {
+function Hero({scrollToCatalog}) {
     return (
         <section className={styles.hero}>
             <div className={styles.overlay}></div>
@@ -15,12 +16,12 @@ function Hero() {
                         Перевірені продавці, чесні ціни, швидка угода.
                     </p>
                     <div className={styles.buttons}>
-                        <button className={styles.buttonPrimary}>
+                        <button className={styles.buttonPrimary} onClick={scrollToCatalog}>
                             Переглянути каталог
                         </button>
-                        <button className={styles.buttonSecondary}>
+                        <Link className={styles.buttonSecondary} to={"add-listing"}>
                             Продати авто
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

@@ -4,14 +4,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 5000",
     "build": "vite build",
     "start": "serve -s build -l 5000",
     "prepare": "husky install"
   },
   "dependencies": {
+    "express": "^5.1.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.9.6"
   },
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^3.10.2",
@@ -22,7 +24,6 @@
     "serve": "^14.2.5",
     "vite": "6.3.5"
   },
-
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",

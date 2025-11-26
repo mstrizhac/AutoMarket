@@ -1,6 +1,6 @@
 import styles from './About.module.css';
 
-function About() {
+export default function About() {
   const stats = [
     { icon: '👥', label: 'Активних користувачів', value: '50,000+' },
     { icon: '🛡️', label: 'Безпечних угод', value: '100%' },
@@ -118,5 +118,3 @@ function About() {
     </div>
   );
 }
-
-export default About;
