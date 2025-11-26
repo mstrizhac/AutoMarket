@@ -14,7 +14,7 @@ const PageLoader = () => {
     </div>
 };
 
-export default function AppRoutes(props) {
+export default function AppRoutes() {
     return (
         <BrowserRouter className={styles.app}>
             <Suspense fallback={<PageLoader />}/>

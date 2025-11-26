@@ -1,9 +1,9 @@
 import {useRef, useState} from 'react';
-import Hero from '../../components/Hero/Hero';
-import SearchFilters from '../../components/SearchFilters/SearchFilters';
-import CarCard from '../../components/CarCard/CarCard';
-import Modal from '../../components/Modal/Modal';
-import {cars} from '../../data/cars';
+import Hero from '../../components/Hero/Hero.jsx';
+import SearchFilters from '../../components/SearchFilters/SearchFilters.jsx';
+import CarCard from '../../components/CarCard/CarCard.jsx';
+import Modal from '../../components/Modal/Modal.jsx';
+import {cars} from '../../data/cars.js';
 import styles from './Home.module.css';
 
 export default function Home() {

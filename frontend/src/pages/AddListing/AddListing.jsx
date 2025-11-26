@@ -28,7 +28,7 @@ export default function AddListing({changePage}) {
   const handleImageUpload = (e) => {
     const files = e.target.files;
     if (files) {
-      const newImages = Array.from(files).map((file, index) =>
+      const newImages = Array.from(files).map((file) =>
         URL.createObjectURL(file)
       );
       setImages(prev => [...prev, ...newImages].slice(0, 6));
@@ -46,7 +46,7 @@ export default function AddListing({changePage}) {
         <p className={styles.subtitle}>Заповніть форму щоб додати ваш автомобіль на продаж</p>
       </div>
 
-      <form onSubmit={(e) => {
+      <form onSubmit={() => {
           changePage("home")
       }} className={styles.form}>
         {/* Основна інформація */}

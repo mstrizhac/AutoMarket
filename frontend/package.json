@@ -22,12 +22,17 @@
     "lint-staged": "^16.2.5",
     "prettier": "^3.6.2",
     "serve": "^14.2.5",
-    "vite": "6.3.5"
+    "vite": "7.1.11"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ]
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
