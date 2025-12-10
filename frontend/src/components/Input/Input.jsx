@@ -1,11 +1,12 @@
-import styles from './Button.module.css';
+import styles from './Input.module.css';
 
-function Button({label, value, type, placeHolder, onChange}) {
+function Input({name, label, value, type, placeHolder, onChange}) {
   return (
       <div className={styles.inputGroup}>
           <label className={styles.label}>{label}</label>
           <input
               type={type}
+              name={name}
               placeholder={placeHolder}
               value={value}
               onChange={onChange}
@@ -16,4 +17,4 @@ function Button({label, value, type, placeHolder, onChange}) {
   );
 }
 
-export default Button;
+export default Input;

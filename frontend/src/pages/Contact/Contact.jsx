@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Contact.module.css';
-import Button from "../../components/Button/Button.jsx";
+import Input from "../../components/Input/Input.jsx";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -92,9 +92,9 @@ export default function Contact() {
 
             <form onSubmit={handleSubmit} className={styles.form}>
               <div className={styles.formGrid}>
-                  <Button onChange={(e) => handleInputChange('name', e.target.value)} label={"Ім'я "} value={formData.name} type={"text"} placeHolder={"Ваше ім'я"}/>
-                  <Button onChange={(e) => handleInputChange('email', e.target.value)} label={"Email *"} value={formData.email} type={"email"} placeHolder={"your@email.com"}/>
-                  <Button onChange={(e) => handleInputChange('phone', e.target.value)} label={"Телефон"} value={formData.phone} type={"tel"} placeHolder={"+380 67 123 45 67"}/>
+                  <Input onChange={(e) => handleInputChange('name', e.target.value)} label={"Ім'я "} value={formData.name} type={"text"} placeHolder={"Ваше ім'я"}/>
+                  <Input onChange={(e) => handleInputChange('email', e.target.value)} label={"Email *"} value={formData.email} type={"email"} placeHolder={"your@email.com"}/>
+                  <Input onChange={(e) => handleInputChange('phone', e.target.value)} label={"Телефон"} value={formData.phone} type={"tel"} placeHolder={"+380 67 123 45 67"}/>
 
                 <div className={styles.inputGroup}>
                   <label className={styles.label}>Тема звернення *</label>

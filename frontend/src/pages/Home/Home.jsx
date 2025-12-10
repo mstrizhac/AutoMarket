@@ -1,16 +1,19 @@
-import {useRef, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import Hero from '../../components/Hero/Hero.jsx';
 import SearchFilters from '../../components/SearchFilters/SearchFilters.jsx';
 import CarCard from '../../components/CarCard/CarCard.jsx';
 import Modal from '../../components/Modal/Modal.jsx';
 import {cars} from '../../data/cars.js';
 import styles from './Home.module.css';
+import env from "../../env.js";
+import {useCars} from "../../hooks/useCars.js";
 
 export default function Home() {
     const targetRef = useRef(null);
 
     const [selectedCar, setSelectedCar] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const { cars, loading, error } = useCars();
 
     const handleCarClick = (car) => {
         setSelectedCar(car);
@@ -21,7 +24,6 @@ export default function Home() {
         setIsModalOpen(false);
         setSelectedCar(null);
     };
-
 
     const scrollToTarget = () => {
         targetRef.current?.scrollIntoView({
@@ -35,8 +37,6 @@ export default function Home() {
             <Hero scrollToCatalog={scrollToTarget} />
 
             <main className={styles.main}>
-                <SearchFilters/>
-
                 <div ref={targetRef} className={styles.catalogSection}>
                     <div className={styles.catalogHeader}>
                         <h2 className={styles.catalogTitle}>Популярні оголошення</h2>
@@ -51,7 +51,9 @@ export default function Home() {
                 </div>
             </main>
 
-            <Modal car={selectedCar} isOpen={isModalOpen} onClose={handleCloseModal}/>
+            {selectedCar &&
+                <Modal car={selectedCar} isOpen={isModalOpen} onClose={handleCloseModal}/>
+            }
         </div>
     );
 }
